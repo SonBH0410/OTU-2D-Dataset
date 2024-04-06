@@ -9,7 +9,7 @@ TABLET 1:  THE DATA DISTRIBUTION OF MMOTU IMAGE DATASET.
   Data type  | Training set | Testing set | Category number
 -------------------------------------------------------------
     OTU_2D   |	   1000	    |      70     |         8		
-   OTU_CEUS  |      70      |	    100    |         8
+   OTU_CEUS  |      70      |	   100    |         8
 -------------------------------------------------------------
 
 Như được hiển thị trong TABLET.I, tập dữ liệu hình ảnh MMOTU chứa hai tập cơ sở dữ liệu con, trong đó OTU_2D và OTU_CEUS tương ứng bao gồm 1469 hình ảnh siêu âm 2D và 170 hình ảnh CEUS. Trên hai tập con, tác giả chia chúng thành TRAINING-SET và TESTING-SET. Điều đáng chú ý là tập TESTING chứa nhiều hình ảnh hơn tập huấn luyện trong OTU CEUS vì trước tiên tác giả hy vọng đảm bảo chất lượng đánh giá. Và trong đây, chúng tôi đang tập trung vào tập dữ liệu OUT_2D.
