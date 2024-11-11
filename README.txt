@@ -41,7 +41,7 @@ Cơ sở dữ liệu OTU-2D có 216 hình ảnh Doppler Flow (CDFI - Color Doppl
           1. Cơ sở dữ liệu OTU_2D             :    '.../OTU_2D/OTU_2D_annotation.json'
           2. Cơ sở dữ liệu OTU_2D đã chia lớp :    '.../OTU_2D/8_layers/OTU_2D_8-layers.json'
 
-```sh
+```
 @article{Zhao2022AMO,
   title={A Multi-Modality Ovarian Tumor Ultrasound Image Dataset for Unsupervised Cross-Domain Semantic Segmentation},
   author={Qi Zhao and Shuchang Lyu and Wenpei Bai and Linghan Cai and Binghao Liu and Mei-Hsuan Wu and Xiubo Sang and Min Yang and Lijiang Chen},
