@@ -11,7 +11,7 @@ TABLET 1:  THE DATA DISTRIBUTION OF MMOTU IMAGE DATASET.
   Data type  | Training set | Testing set | Category number
 -------------------------------------------------------------
     OTU_2D   |	   1000	    |      469    |         8		
-   OTU_CEUS  |      70      |	     100    |         8
+   OTU_CEUS  |      70      |	   100    |         2
 -------------------------------------------------------------
 
 As shown in TABLE 1, the MMOTU image dataset includes two sub-databases: OTU_2D and OTU_CEUS, which contain 1469 2D ultrasound images and 170 CEUS images, respectively. The authors have divided the two sub-databases into TRAINING-SET and TESTING-SET. Notably, the TESTING-SET for OTU_CEUS contains more images than the TRAINING-SET because the authors wanted to ensure the quality of the evaluation. Here, we are focusing on the OTU_2D dataset.
