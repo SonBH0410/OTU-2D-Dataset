@@ -1,27 +1,29 @@
-Bộ cơ sở dữ liệu hình ảnh Multi-Modality Ovarian Tumor Ultrasound (MMOTU) bao gồm hai tập cơ sở dữ liệu con là OTU_2D và OTU_CEUS tương ứng bao gồm 1469 hình ảnh siêu âm 2D và 170 hình ảnh CEUS. Và cơ sở dữ liệu MMOTU đã được công bố xuất bản trong bài báo:
+The MMOTU dataset is a significant resource designed to support research and applications in the field of medical image analysis, specifically in the classification and segmentation of ovarian tumors from ultrasound images. Automatic image segmentation of ovarian tumors is crucial for improving diagnostic accuracy, reducing errors by clinicians, saving time, and minimizing costs in medical examination processes. Additionally, this dataset can aid in the development of advanced machine learning and deep learning algorithms to assist medical professionals in diagnosing ovarian tumors more efficiently.
+
+The MMOTU dataset contains images of different types of ovarian tumors, including chocolate cysts, mucinous cystadenomas, high-grade serous cystadenomas, normal ovaries, and more. The diversity of tumor types in the dataset makes it an invaluable resource for training models that are capable of handling a variety of clinical cases.
 
 A Multi-Modality Ovarian Tumor Ultrasound Image Dataset for Unsupervised Cross-Domain Semantic Segmentation
 Authors: Qi Zhao, Shuchang Lyu, Wenpei Bai, Linghan Cai, Binghao Liu, Meijing Wu, Xiubo Sang, Min Yang, and Lijiang Chen.
-Link github: https://github.com/cv516Buaa/MMOTU_DS2Net
+Link github: https://github.com/cv516Buaa/MMOTU_DS2Netx
 
 TABLET 1:  THE DATA DISTRIBUTION OF MMOTU IMAGE DATASET.
 -------------------------------------------------------------
   Data type  | Training set | Testing set | Category number
 -------------------------------------------------------------
-    OTU_2D   |	   1000	    |      70     |         8		
-   OTU_CEUS  |      70      |	   100    |         8
+    OTU_2D   |	   1000	    |      469    |         8		
+   OTU_CEUS  |      70      |	     100    |         8
 -------------------------------------------------------------
 
-Như được hiển thị trong TABLET.I, tập dữ liệu hình ảnh MMOTU chứa hai tập cơ sở dữ liệu con, trong đó OTU_2D và OTU_CEUS tương ứng bao gồm 1469 hình ảnh siêu âm 2D và 170 hình ảnh CEUS. Trên hai tập con, tác giả chia chúng thành TRAINING-SET và TESTING-SET. Điều đáng chú ý là tập TESTING chứa nhiều hình ảnh hơn tập huấn luyện trong OTU CEUS vì trước tiên tác giả hy vọng đảm bảo chất lượng đánh giá. Và trong đây, chúng tôi đang tập trung vào tập dữ liệu OUT_2D.
+As shown in TABLE 1, the MMOTU image dataset includes two sub-databases: OTU_2D and OTU_CEUS, which contain 1469 2D ultrasound images and 170 CEUS images, respectively. The authors have divided the two sub-databases into TRAINING-SET and TESTING-SET. Notably, the TESTING-SET for OTU_CEUS contains more images than the TRAINING-SET because the authors wanted to ensure the quality of the evaluation. Here, we are focusing on the OTU_2D dataset.
 
-TABLET 2: Cơ sở dữ liệu OTU_2D
+TABLET 2: OTU2D Dataset
 -----------------------------------------------------------------------------------------------------
   Total number of images | Num of Training images | Num of Testing images | Num of Validation images
 -----------------------------------------------------------------------------------------------------
            1469          |          1177          |         147           |             147
 -----------------------------------------------------------------------------------------------------
 
-TABLET 3: Số lượng ảnh trong từng lớp của CSDLCSDL
+TABLET 3: IMAGE COUNT IN EACH CLASS OF OTU_2D
 -------------------------------------------------------------------------
  No. |      Type of Ovarian Tumor     | Total image | Train | Validation
 -------------------------------------------------------------------------
@@ -37,10 +39,11 @@ TABLET 3: Số lượng ảnh trong từng lớp của CSDLCSDL
                   Total               |     1469    |  1000 |    469
 -------------------------------------------------------------------------
 
-Cơ sở dữ liệu OTU-2D có 216 hình ảnh Doppler Flow (CDFI - Color Doppler Flow Images), và trong đó có 1253 ảnh còn lại là ảnh siêu âm 2D truyền thống. Trong TABLET 2, đã mô tả cơ sở dữ liệu OTU_2D bao gồmgồm 1469 ảnh, bao gồm 8 loại và số lượng tương ứng trong TABLET. Và đường dẫn file JSON gán nhãn của 1469 ảnh nằm theo đường dẫn 
-          1. Cơ sở dữ liệu OTU_2D             :    '.../OTU_2D/OTU_2D_annotation.json'
-          2. Cơ sở dữ liệu OTU_2D đã chia lớp :    '.../OTU_2D/8_layers/OTU_2D_8-layers.json'
+The OTU_2D dataset contains 216 Doppler Flow Images (CDFI - Color Doppler Flow Images), with the remaining 1253 images being traditional 2D ultrasound images. As described in TABLE 2, the OTU_2D dataset includes 1469 images across 8 categories, with the corresponding image counts shown in TABLE 3. The annotated JSON files for the 1469 images can be found at the following paths:
+          1. OTU_2D dataset                     :    '.../OTU_2D/OTU_2D_annotation.json'
+          2. OTU_2D dataset devied to 8 classes :    '.../OTU_2D/8_layers/OTU_2D_8-layers.json'
 
+Here is the citation for the MMOTU Dataset paper:
 ```
 @article{Zhao2022AMO,
   title={A Multi-Modality Ovarian Tumor Ultrasound Image Dataset for Unsupervised Cross-Domain Semantic Segmentation},
